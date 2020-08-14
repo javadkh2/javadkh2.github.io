@@ -71,15 +71,12 @@
       var emailInput = EmailsInput(inputContainerNode, {
         name: 'emails-input',
         list: ['javad@gmail.com'],
-        onChange: function (data) {
-          console.log('emails', data);
-        },
       });
       function addRandomEmail() {
         emailInput.addEmail(generateRandomEmail());
       }
       function alertEmailsCount() {
-        alert('Emails count: ' + emailInput.getEmailsCount());
+        alert('Valid emails count: ' + emailInput.getValidEmailsCount());
       }
     </script>
   </body>
